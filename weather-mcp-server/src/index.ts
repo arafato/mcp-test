@@ -8,7 +8,7 @@ const server = new McpServer({
   version: "1.0.0",
 });
 
-// Register a tool to get current weather using Open-Meteo (free, no API key needed)
+// Register a tool to get current weather using Open-Meteo (free, no API key needed).
 server.tool(
   "get_weather",
   "Get current weather for a location using latitude and longitude",
