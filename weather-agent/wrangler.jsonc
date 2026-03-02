@@ -1,0 +1,29 @@
+{
+  "name": "weather-agent",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-13",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Workers AI binding for LLM access
+  "ai": {
+    "binding": "AI"
+  },
+
+  // The Agent runs as a Durable Object
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "WeatherAgent",
+        "class_name": "WeatherAgent"
+      }
+    ]
+  },
+
+  // Durable Objects require migrations
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_classes": ["WeatherAgent"]
+    }
+  ]
+}

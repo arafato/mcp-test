@@ -1,0 +1,18 @@
+{
+  "name": "weather-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "agents": "^0.3.6",
+    "ai": "^6.0.58",
+    "workers-ai-provider": "^3.0.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.61.0"
+  }
+}
