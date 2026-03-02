@@ -2,7 +2,7 @@ import { Agent, routeAgentRequest } from "agents";
 import { createWorkersAI } from "workers-ai-provider";
 import { streamText } from "ai";
 
-// Define environment bindings
+// Define environment bindings.
 type Env = {
   WeatherAgent: DurableObjectNamespace<WeatherAgent>;
   AI: Ai; // Workers AI binding
